@@ -1,7 +1,7 @@
 ---
 title: "Chicken Feed"
-author: "put your name here"
-date: "2/29/2020"
+author: "Jose Torres Vargas"
+date: "03/03/2020"
 output: html_document
 ---
 
@@ -36,18 +36,27 @@ attach(chickenData)
 ### Graphical summary
 
 <!-- plot chicken weight against each of the three explanatory variables.  Weight against a categorial varable is a boxplot, weight against a numerical variable is a scatter plot !-->
+Box plot of weight based on feed
+
+```{r}
+plot(weight~feed,data=chickenData)
+```
 
 
 ### Numerical summary
 
-
+```{r}
+plot(weight~speed,data=chickenData)
+```
 
 ### Inference -- Analysis of Variance
 
-
+```{r}
+plot(weight~sex,data=chickenData)
+```
 
 ###  Conclusions  -- which variables affect chicken weight?
-
+The variables that affect chicken weight is Gender and feed.
 
 
 
