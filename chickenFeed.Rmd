@@ -52,7 +52,8 @@ plot(weight~speed,data=chickenData)
 ### Inference -- Analysis of Variance
 
 ```{r}
-plot(weight~sex,data=chickenData)
+model1 = lm(weight~feed+speed+sex, data=chickenData)
+anova(model1)
 ```
 
 ###  Conclusions  -- which variables affect chicken weight?
